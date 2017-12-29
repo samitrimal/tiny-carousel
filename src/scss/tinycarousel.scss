@@ -1,0 +1,63 @@
+.tiny-carousel-wrapper{
+  width:100%;
+}
+.tiny-carousel{
+  position: relative;
+  width:100%;
+  overflow: hidden;
+  margin: 0;
+  padding:0;
+  .tiny-carousel-nav{
+    position: absolute;
+    background: #000;
+    color: #fff;
+    top: 27%;
+    width: 30px;
+    height: 60px;
+    font-size: 36px;
+    line-height: 60px;
+    z-index: 1111;
+    &.tc-next{
+      right:2px;
+    }
+    &.tc-prev{
+      left:6px;
+    }
+   
+  }
+   .tiny-carousel-inner{
+    margin:0;
+    padding: 0;
+    position:relative;
+    overflow: hidden;
+    height: 250px;
+    
+    .tiny-carousel-slides{
+      position: absolute;
+      margin:0;
+      padding:0;
+      display: block;
+      transition: left 2s;
+      -webkit-transition: left 2s;
+      -moz-transition: left 2s;
+      left:0;
+    }
+
+    .carousel-item {
+      display: block;
+      float:left;
+      margin: 0 5px;
+      padding:0;
+      width: 250px;
+      text-align: center;
+      
+      .img-responsive{
+        height: 200px;
+      }
+    }
+  }
+  
+}
+
+
+
